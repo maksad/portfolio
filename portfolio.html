@@ -20,13 +20,18 @@
         background-image: url('https://static.pexels.com/photos/7369/startup-photos.jpg');
       }
 
-      .portfolio {
-        background-image: url('https://static.pexels.com/photos/242236/pexels-photo-242236.jpeg');
+      .portfolio .wrap {
+        padding-top: 80px;
+      }
+      .portfolio .wrap .card{
+        box-shadow: none;
+        background: transparent;
       }
 
       #tabs-swipe-demo {
         position: fixed;
         background-color: rgba(255, 255, 255, 0.48);
+        z-index: 1;
       }
 
       .wrap {
@@ -49,6 +54,22 @@
       .caption .row a {
         color: white;
         text-decoration: underline;
+      }
+
+      .card {
+        display: flex;
+        margin-bottom: 150px;
+      }
+
+      .reversed {
+        flex-direction: row-reverse;
+      }
+
+      .card-image {
+        height: 289px;
+        width: 50%;
+        background-size: cover;
+        background-position: center;
       }
     </style>
   </head>
@@ -87,8 +108,49 @@
         </div>
       </div>
     </div>
+
     <div id="tab-3" class="col s12">
-      <div class="cover-image portfolio"></div>
+      <div class="cover-image portfolio">
+        <div class="wrap">
+
+          <div class="col s12">
+            <div class="card horizontal">
+              <div
+                class="card-image"
+                style="background-image: url('https://static.pexels.com/photos/164/man-person-apple-iphone.jpg')"
+              >
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">full-stack developer</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col s12">
+            <div class="card horizontal reversed">
+              <div
+                class="card-image"
+                style="background-image: url('https://static.pexels.com/photos/28855/pexels-photo-28855.jpg')"
+              ></div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">photography</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
