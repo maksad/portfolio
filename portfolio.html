@@ -33,6 +33,23 @@
         max-width: 1200px;
         margin: 0 auto;
       }
+
+      .caption {
+        height: 100%;
+        display: flex;
+      }
+
+      .caption .row {
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+      }
+
+      .caption .row a {
+        color: white;
+        text-decoration: underline;
+      }
     </style>
   </head>
 
@@ -48,8 +65,27 @@
     <div id="tab-1" class="col s12">
       <div class="cover-image main"></div>
     </div>
-    <div id="tab-2" class="col s12">
-      <div class="cover-image about"></div>
+      <div id="tab-2" class="col s12">
+        <div class="cover-image about">
+          <div class="wrap caption">
+            <div class="row">
+              <div class="col s12 m5">
+                <div class="card-panel teal">
+                  <span class="white-text">
+                    <p>
+                      I'm Maksad Donayorov - a graduate student of software engineering at
+                      <a href="http://www.auca.kg/en/auca_news/1959/">American University of Central Asia</a>.
+                    </p>
+                    <p>
+                      Currently, I work as a full-stack developer at
+                      <a href="http://www.fastmonkeys.com/">Fast Monkeys</a>, Helsinki, Finland.
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
     <div id="tab-3" class="col s12">
       <div class="cover-image portfolio"></div>
